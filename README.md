@@ -1,22 +1,23 @@
-
-
-
 # UIImage-PDFColoredImage
 =====================================
-
 UIImage extension for iOS which converts a black PDF image into a UIImage of any size, in any color. One line of code, really simple to use.
+
+Read all about it: [http://andrewhart.me/post/54194410717/adding-vector-support-to-uiimage]()
 
 ### The benefits
 
 **Adjustment**
+
 If you want to adjust the size or color of an icon, you don't have to re-export it, you just change it in the code.
 
 If you want to change the shape of the icon, you don't have to re-export a number of different versions - you export it once and it'll update across all sizes and colors.
 
 **Simplicity**
+
 It simplifies your project and file system by removing the need for multiple versions of the same icon.
 
 **File size**
+
 File size is reduced because you only have the 1 export, which covers every version of the icon.
 
 
@@ -56,14 +57,14 @@ And it's super simple to use.
 Import `"UIImage+PDFColoredImage.h"` into the file where you want to use it. In my personal usage, I put this in the `-Prefix.pch` file, as it's in use across my entire project.
 
 4. Then, when you want to display an image:
+`test`
 
-    NSString *iconPDFName = @"icon_clock.pdf";
-    CGSize size = CGSizeMake(160, 160);
-    UIColor *fillColor = [UIColor redColor];
+		NSString *iconPDFName = @"icon_clock.pdf";
+		CGSize size = CGSizeMake(160, 160);
+		UIColor *fillColor = [UIColor redColor];
 	
-    UIImage *image = [UIImage imageWithPDFNamed:iconPDFName
-                                        fitSize:size
-                                  withFillColor:fillColor];
+		UIImage *image = [UIImage imageWithPDFNamed:iconPDFName fitSize:size withFillColor:fillColor];
+
 
 ### Acknowledgements
 

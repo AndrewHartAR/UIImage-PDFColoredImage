@@ -21,7 +21,6 @@
 		49D0A54C177F4F0D00F69BDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A546177F4F0D00F69BDD /* Default.png */; };
 		49D0A54D177F4F0D00F69BDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A547177F4F0D00F69BDD /* Default@2x.png */; };
 		49D0A54E177F4F0D00F69BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A548177F4F0D00F69BDD /* main.m */; };
-		49D0A54F177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A549177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist */; };
 		49D0A561177F4F2B00F69BDD /* UIImage+OverlayColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A552177F4F2B00F69BDD /* UIImage+OverlayColor.m */; };
 		49D0A562177F4F2B00F69BDD /* UIImage+PDFColoredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A554177F4F2B00F69BDD /* UIImage+PDFColoredImage.m */; };
 		49D0A563177F4F2B00F69BDD /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A556177F4F2B00F69BDD /* LICENSE.txt */; };
@@ -233,7 +232,6 @@
 				49D0A54B177F4F0D00F69BDD /* Default-568h@2x.png in Resources */,
 				49D0A54C177F4F0D00F69BDD /* Default.png in Resources */,
 				49D0A54D177F4F0D00F69BDD /* Default@2x.png in Resources */,
-				49D0A54F177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist in Resources */,
 				49D0A563177F4F2B00F69BDD /* LICENSE.txt in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -350,8 +348,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PDPDFColoredImage/PDPDFColoredImage-Prefix.pch";
-				INFOPLIST_FILE = "PDPDFColoredImage/PDPDFColoredImage-Info.plist";
+				GCC_PREFIX_HEADER = "Example Project/PDPDFColoredImage-Prefix.pch";
+				INFOPLIST_FILE = "Example project/PDPDFColoredImage-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};
@@ -361,8 +359,8 @@
 			isa = XCBuildConfiguration;
 			buildSettings = {
 				GCC_PRECOMPILE_PREFIX_HEADER = YES;
-				GCC_PREFIX_HEADER = "PDPDFColoredImage/PDPDFColoredImage-Prefix.pch";
-				INFOPLIST_FILE = "PDPDFColoredImage/PDPDFColoredImage-Info.plist";
+				GCC_PREFIX_HEADER = "Example Project/PDPDFColoredImage-Prefix.pch";
+				INFOPLIST_FILE = "Example project/PDPDFColoredImage-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				WRAPPER_EXTENSION = app;
 			};

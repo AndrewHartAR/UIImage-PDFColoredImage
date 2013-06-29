@@ -1,0 +1,395 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 46;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		494E8456177F0C9800520E9A /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E8455177F0C9800520E9A /* UIKit.framework */; };
+		494E8458177F0C9800520E9A /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E8457177F0C9800520E9A /* Foundation.framework */; };
+		494E845A177F0C9800520E9A /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E8459177F0C9800520E9A /* CoreGraphics.framework */; };
+		494E8490177F0D1200520E9A /* QuartzCore.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 494E848F177F0D1200520E9A /* QuartzCore.framework */; };
+		49D0A535177F4ECA00F69BDD /* icon_clock.pdf in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A534177F4ECA00F69BDD /* icon_clock.pdf */; };
+		49D0A53A177F4ED800F69BDD /* PDAppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A537177F4ED800F69BDD /* PDAppDelegate.m */; };
+		49D0A53B177F4ED800F69BDD /* PDViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A539177F4ED800F69BDD /* PDViewController.m */; };
+		49D0A540177F4EE500F69BDD /* PDViewController_iPad.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A53C177F4EE500F69BDD /* PDViewController_iPad.xib */; };
+		49D0A541177F4EE500F69BDD /* PDViewController_iPhone.xib in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A53E177F4EE500F69BDD /* PDViewController_iPhone.xib */; };
+		49D0A544177F4EF400F69BDD /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A542177F4EF400F69BDD /* InfoPlist.strings */; };
+		49D0A54B177F4F0D00F69BDD /* Default-568h@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A545177F4F0D00F69BDD /* Default-568h@2x.png */; };
+		49D0A54C177F4F0D00F69BDD /* Default.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A546177F4F0D00F69BDD /* Default.png */; };
+		49D0A54D177F4F0D00F69BDD /* Default@2x.png in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A547177F4F0D00F69BDD /* Default@2x.png */; };
+		49D0A54E177F4F0D00F69BDD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A548177F4F0D00F69BDD /* main.m */; };
+		49D0A54F177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A549177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist */; };
+		49D0A561177F4F2B00F69BDD /* UIImage+OverlayColor.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A552177F4F2B00F69BDD /* UIImage+OverlayColor.m */; };
+		49D0A562177F4F2B00F69BDD /* UIImage+PDFColoredImage.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A554177F4F2B00F69BDD /* UIImage+PDFColoredImage.m */; };
+		49D0A563177F4F2B00F69BDD /* LICENSE.txt in Resources */ = {isa = PBXBuildFile; fileRef = 49D0A556177F4F2B00F69BDD /* LICENSE.txt */; };
+		49D0A564177F4F2B00F69BDD /* NSData+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A558177F4F2B00F69BDD /* NSData+MD5.m */; };
+		49D0A565177F4F2B00F69BDD /* NSString+MD5.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A55A177F4F2B00F69BDD /* NSString+MD5.m */; };
+		49D0A566177F4F2B00F69BDD /* PDFView.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A55C177F4F2B00F69BDD /* PDFView.m */; };
+		49D0A567177F4F2B00F69BDD /* UIImage+PDF.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A55E177F4F2B00F69BDD /* UIImage+PDF.m */; };
+		49D0A568177F4F2B00F69BDD /* UIView+Image.m in Sources */ = {isa = PBXBuildFile; fileRef = 49D0A560177F4F2B00F69BDD /* UIView+Image.m */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		494E8452177F0C9800520E9A /* PDPDFColoredImage.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = PDPDFColoredImage.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		494E8455177F0C9800520E9A /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
+		494E8457177F0C9800520E9A /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
+		494E8459177F0C9800520E9A /* CoreGraphics.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = CoreGraphics.framework; path = System/Library/Frameworks/CoreGraphics.framework; sourceTree = SDKROOT; };
+		494E848F177F0D1200520E9A /* QuartzCore.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = QuartzCore.framework; path = System/Library/Frameworks/QuartzCore.framework; sourceTree = SDKROOT; };
+		49D0A534177F4ECA00F69BDD /* icon_clock.pdf */ = {isa = PBXFileReference; lastKnownFileType = image.pdf; path = icon_clock.pdf; sourceTree = SOURCE_ROOT; };
+		49D0A536177F4ED800F69BDD /* PDAppDelegate.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDAppDelegate.h; path = "Example project/PDAppDelegate.h"; sourceTree = SOURCE_ROOT; };
+		49D0A537177F4ED800F69BDD /* PDAppDelegate.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDAppDelegate.m; path = "Example project/PDAppDelegate.m"; sourceTree = SOURCE_ROOT; };
+		49D0A538177F4ED800F69BDD /* PDViewController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = PDViewController.h; path = "Example project/PDViewController.h"; sourceTree = SOURCE_ROOT; };
+		49D0A539177F4ED800F69BDD /* PDViewController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = PDViewController.m; path = "Example project/PDViewController.m"; sourceTree = SOURCE_ROOT; };
+		49D0A53D177F4EE500F69BDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Example project/en.lproj/PDViewController_iPad.xib"; sourceTree = SOURCE_ROOT; };
+		49D0A53F177F4EE500F69BDD /* en */ = {isa = PBXFileReference; lastKnownFileType = file.xib; name = en; path = "Example project/en.lproj/PDViewController_iPhone.xib"; sourceTree = SOURCE_ROOT; };
+		49D0A543177F4EF400F69BDD /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = "Example project/en.lproj/InfoPlist.strings"; sourceTree = SOURCE_ROOT; };
+		49D0A545177F4F0D00F69BDD /* Default-568h@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default-568h@2x.png"; path = "Example project/Default-568h@2x.png"; sourceTree = SOURCE_ROOT; };
+		49D0A546177F4F0D00F69BDD /* Default.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = Default.png; path = "Example project/Default.png"; sourceTree = SOURCE_ROOT; };
+		49D0A547177F4F0D00F69BDD /* Default@2x.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; name = "Default@2x.png"; path = "Example project/Default@2x.png"; sourceTree = SOURCE_ROOT; };
+		49D0A548177F4F0D00F69BDD /* main.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; name = main.m; path = "Example project/main.m"; sourceTree = SOURCE_ROOT; };
+		49D0A549177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.plist.xml; name = "PDPDFColoredImage-Info.plist"; path = "Example project/PDPDFColoredImage-Info.plist"; sourceTree = SOURCE_ROOT; };
+		49D0A54A177F4F0D00F69BDD /* PDPDFColoredImage-Prefix.pch */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; name = "PDPDFColoredImage-Prefix.pch"; path = "Example project/PDPDFColoredImage-Prefix.pch"; sourceTree = SOURCE_ROOT; };
+		49D0A551177F4F2B00F69BDD /* UIImage+OverlayColor.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+OverlayColor.h"; sourceTree = "<group>"; };
+		49D0A552177F4F2B00F69BDD /* UIImage+OverlayColor.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+OverlayColor.m"; sourceTree = "<group>"; };
+		49D0A553177F4F2B00F69BDD /* UIImage+PDFColoredImage.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDFColoredImage.h"; sourceTree = "<group>"; };
+		49D0A554177F4F2B00F69BDD /* UIImage+PDFColoredImage.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDFColoredImage.m"; sourceTree = "<group>"; };
+		49D0A556177F4F2B00F69BDD /* LICENSE.txt */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text; path = LICENSE.txt; sourceTree = "<group>"; };
+		49D0A557177F4F2B00F69BDD /* NSData+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+MD5.h"; sourceTree = "<group>"; };
+		49D0A558177F4F2B00F69BDD /* NSData+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+MD5.m"; sourceTree = "<group>"; };
+		49D0A559177F4F2B00F69BDD /* NSString+MD5.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSString+MD5.h"; sourceTree = "<group>"; };
+		49D0A55A177F4F2B00F69BDD /* NSString+MD5.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSString+MD5.m"; sourceTree = "<group>"; };
+		49D0A55B177F4F2B00F69BDD /* PDFView.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = PDFView.h; sourceTree = "<group>"; };
+		49D0A55C177F4F2B00F69BDD /* PDFView.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = PDFView.m; sourceTree = "<group>"; };
+		49D0A55D177F4F2B00F69BDD /* UIImage+PDF.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIImage+PDF.h"; sourceTree = "<group>"; };
+		49D0A55E177F4F2B00F69BDD /* UIImage+PDF.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIImage+PDF.m"; sourceTree = "<group>"; };
+		49D0A55F177F4F2B00F69BDD /* UIView+Image.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Image.h"; sourceTree = "<group>"; };
+		49D0A560177F4F2B00F69BDD /* UIView+Image.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Image.m"; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		494E844F177F0C9800520E9A /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				494E8490177F0D1200520E9A /* QuartzCore.framework in Frameworks */,
+				494E8456177F0C9800520E9A /* UIKit.framework in Frameworks */,
+				494E8458177F0C9800520E9A /* Foundation.framework in Frameworks */,
+				494E845A177F0C9800520E9A /* CoreGraphics.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		494E8449177F0C9800520E9A = {
+			isa = PBXGroup;
+			children = (
+				49D0A550177F4F2B00F69BDD /* UIImage-PDFColoredImage */,
+				494E845B177F0C9800520E9A /* Project Files */,
+				494E8454177F0C9800520E9A /* Frameworks */,
+				494E8453177F0C9800520E9A /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		494E8453177F0C9800520E9A /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				494E8452177F0C9800520E9A /* PDPDFColoredImage.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		494E8454177F0C9800520E9A /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				494E848F177F0D1200520E9A /* QuartzCore.framework */,
+				494E8455177F0C9800520E9A /* UIKit.framework */,
+				494E8457177F0C9800520E9A /* Foundation.framework */,
+				494E8459177F0C9800520E9A /* CoreGraphics.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		494E845B177F0C9800520E9A /* Project Files */ = {
+			isa = PBXGroup;
+			children = (
+				49D0A534177F4ECA00F69BDD /* icon_clock.pdf */,
+				49D0A536177F4ED800F69BDD /* PDAppDelegate.h */,
+				49D0A537177F4ED800F69BDD /* PDAppDelegate.m */,
+				49D0A538177F4ED800F69BDD /* PDViewController.h */,
+				49D0A539177F4ED800F69BDD /* PDViewController.m */,
+				49D0A53C177F4EE500F69BDD /* PDViewController_iPad.xib */,
+				49D0A53E177F4EE500F69BDD /* PDViewController_iPhone.xib */,
+				494E845C177F0C9800520E9A /* Supporting Files */,
+			);
+			name = "Project Files";
+			path = PDPDFColoredImage;
+			sourceTree = "<group>";
+		};
+		494E845C177F0C9800520E9A /* Supporting Files */ = {
+			isa = PBXGroup;
+			children = (
+				49D0A542177F4EF400F69BDD /* InfoPlist.strings */,
+				49D0A545177F4F0D00F69BDD /* Default-568h@2x.png */,
+				49D0A546177F4F0D00F69BDD /* Default.png */,
+				49D0A547177F4F0D00F69BDD /* Default@2x.png */,
+				49D0A548177F4F0D00F69BDD /* main.m */,
+				49D0A549177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist */,
+				49D0A54A177F4F0D00F69BDD /* PDPDFColoredImage-Prefix.pch */,
+			);
+			name = "Supporting Files";
+			sourceTree = "<group>";
+		};
+		49D0A550177F4F2B00F69BDD /* UIImage-PDFColoredImage */ = {
+			isa = PBXGroup;
+			children = (
+				49D0A551177F4F2B00F69BDD /* UIImage+OverlayColor.h */,
+				49D0A552177F4F2B00F69BDD /* UIImage+OverlayColor.m */,
+				49D0A553177F4F2B00F69BDD /* UIImage+PDFColoredImage.h */,
+				49D0A554177F4F2B00F69BDD /* UIImage+PDFColoredImage.m */,
+				49D0A555177F4F2B00F69BDD /* UIImage-PDF */,
+			);
+			name = "UIImage-PDFColoredImage";
+			path = "../UIImage-PDFColoredImage";
+			sourceTree = "<group>";
+		};
+		49D0A555177F4F2B00F69BDD /* UIImage-PDF */ = {
+			isa = PBXGroup;
+			children = (
+				49D0A556177F4F2B00F69BDD /* LICENSE.txt */,
+				49D0A557177F4F2B00F69BDD /* NSData+MD5.h */,
+				49D0A558177F4F2B00F69BDD /* NSData+MD5.m */,
+				49D0A559177F4F2B00F69BDD /* NSString+MD5.h */,
+				49D0A55A177F4F2B00F69BDD /* NSString+MD5.m */,
+				49D0A55B177F4F2B00F69BDD /* PDFView.h */,
+				49D0A55C177F4F2B00F69BDD /* PDFView.m */,
+				49D0A55D177F4F2B00F69BDD /* UIImage+PDF.h */,
+				49D0A55E177F4F2B00F69BDD /* UIImage+PDF.m */,
+				49D0A55F177F4F2B00F69BDD /* UIView+Image.h */,
+				49D0A560177F4F2B00F69BDD /* UIView+Image.m */,
+			);
+			path = "UIImage-PDF";
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		494E8451177F0C9800520E9A /* PDPDFColoredImage */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = 494E8478177F0C9800520E9A /* Build configuration list for PBXNativeTarget "PDPDFColoredImage" */;
+			buildPhases = (
+				494E844E177F0C9800520E9A /* Sources */,
+				494E844F177F0C9800520E9A /* Frameworks */,
+				494E8450177F0C9800520E9A /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = PDPDFColoredImage;
+			productName = PDPDFColoredImage;
+			productReference = 494E8452177F0C9800520E9A /* PDPDFColoredImage.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		494E844A177F0C9800520E9A /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				CLASSPREFIX = PD;
+				LastUpgradeCheck = 0460;
+				ORGANIZATIONNAME = "Project Dent";
+			};
+			buildConfigurationList = 494E844D177F0C9800520E9A /* Build configuration list for PBXProject "PDPDFColoredImage" */;
+			compatibilityVersion = "Xcode 3.2";
+			developmentRegion = English;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+			);
+			mainGroup = 494E8449177F0C9800520E9A;
+			productRefGroup = 494E8453177F0C9800520E9A /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				494E8451177F0C9800520E9A /* PDPDFColoredImage */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		494E8450177F0C9800520E9A /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D0A535177F4ECA00F69BDD /* icon_clock.pdf in Resources */,
+				49D0A540177F4EE500F69BDD /* PDViewController_iPad.xib in Resources */,
+				49D0A541177F4EE500F69BDD /* PDViewController_iPhone.xib in Resources */,
+				49D0A544177F4EF400F69BDD /* InfoPlist.strings in Resources */,
+				49D0A54B177F4F0D00F69BDD /* Default-568h@2x.png in Resources */,
+				49D0A54C177F4F0D00F69BDD /* Default.png in Resources */,
+				49D0A54D177F4F0D00F69BDD /* Default@2x.png in Resources */,
+				49D0A54F177F4F0D00F69BDD /* PDPDFColoredImage-Info.plist in Resources */,
+				49D0A563177F4F2B00F69BDD /* LICENSE.txt in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		494E844E177F0C9800520E9A /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				49D0A53A177F4ED800F69BDD /* PDAppDelegate.m in Sources */,
+				49D0A53B177F4ED800F69BDD /* PDViewController.m in Sources */,
+				49D0A54E177F4F0D00F69BDD /* main.m in Sources */,
+				49D0A561177F4F2B00F69BDD /* UIImage+OverlayColor.m in Sources */,
+				49D0A562177F4F2B00F69BDD /* UIImage+PDFColoredImage.m in Sources */,
+				49D0A564177F4F2B00F69BDD /* NSData+MD5.m in Sources */,
+				49D0A565177F4F2B00F69BDD /* NSString+MD5.m in Sources */,
+				49D0A566177F4F2B00F69BDD /* PDFView.m in Sources */,
+				49D0A567177F4F2B00F69BDD /* UIImage+PDF.m in Sources */,
+				49D0A568177F4F2B00F69BDD /* UIView+Image.m in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXVariantGroup section */
+		49D0A53C177F4EE500F69BDD /* PDViewController_iPad.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D0A53D177F4EE500F69BDD /* en */,
+			);
+			name = PDViewController_iPad.xib;
+			sourceTree = "<group>";
+		};
+		49D0A53E177F4EE500F69BDD /* PDViewController_iPhone.xib */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D0A53F177F4EE500F69BDD /* en */,
+			);
+			name = PDViewController_iPhone.xib;
+			sourceTree = "<group>";
+		};
+		49D0A542177F4EF400F69BDD /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				49D0A543177F4EF400F69BDD /* en */,
+			);
+			name = InfoPlist.strings;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		494E8476177F0C9800520E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_SYMBOLS_PRIVATE_EXTERN = NO;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		494E8477177F0C9800520E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++0x";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				"CODE_SIGN_IDENTITY[sdk=iphoneos*]" = "iPhone Developer";
+				COPY_PHASE_STRIP = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu99;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 6.1;
+				OTHER_CFLAGS = "-DNS_BLOCK_ASSERTIONS=1";
+				SDKROOT = iphoneos;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		494E8479177F0C9800520E9A /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDPDFColoredImage/PDPDFColoredImage-Prefix.pch";
+				INFOPLIST_FILE = "PDPDFColoredImage/PDPDFColoredImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Debug;
+		};
+		494E847A177F0C9800520E9A /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = "PDPDFColoredImage/PDPDFColoredImage-Prefix.pch";
+				INFOPLIST_FILE = "PDPDFColoredImage/PDPDFColoredImage-Info.plist";
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				WRAPPER_EXTENSION = app;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		494E844D177F0C9800520E9A /* Build configuration list for PBXProject "PDPDFColoredImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494E8476177F0C9800520E9A /* Debug */,
+				494E8477177F0C9800520E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		494E8478177F0C9800520E9A /* Build configuration list for PBXNativeTarget "PDPDFColoredImage" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				494E8479177F0C9800520E9A /* Debug */,
+				494E847A177F0C9800520E9A /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = 494E844A177F0C9800520E9A /* Project object */;
+}

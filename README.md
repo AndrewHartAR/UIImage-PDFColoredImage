@@ -1,5 +1,4 @@
 # UIImage-PDFColoredImage
-=====================================
 UIImage extension for iOS which converts a black PDF image into a UIImage of any size, in any color. One line of code, really simple to use.
 
 Read all about it: [http://andrewhart.me/post/54194410717/adding-vector-support-to-uiimage]()

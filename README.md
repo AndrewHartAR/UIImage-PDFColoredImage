@@ -56,7 +56,6 @@ And it's super simple to use.
 Import `"UIImage+PDFColoredImage.h"` into the file where you want to use it. In my personal usage, I put this in the `-Prefix.pch` file, as it's in use across my entire project.
 
 4. Then, when you want to display an image:
-`test`
 
 		NSString *iconPDFName = @"icon_clock.pdf";
 		CGSize size = CGSizeMake(160, 160);

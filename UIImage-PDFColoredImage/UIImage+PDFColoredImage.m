@@ -26,4 +26,17 @@
     return colorImage;
 }
 
++(UIImage *)imageWithPDFURL:(NSURL *)url fitSize:(CGSize)size withFillColor:(UIColor *)fillColor
+{
+    if (!url) {
+        return nil;
+    }
+    
+    UIImage *image = [UIImage imageWithPDFURL:url atSize:size];
+    
+    UIImage *colorImage = [image imageWithOverlayColor:fillColor];
+    
+    return colorImage;
+}
+
 @end

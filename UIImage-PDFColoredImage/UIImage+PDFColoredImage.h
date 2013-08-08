@@ -11,5 +11,6 @@
 @interface UIImage (PDFColoredImage)
 
 +(UIImage *)imageWithPDFNamed:(NSString *)pdfName fitSize:(CGSize)size withFillColor:(UIColor *)fillColor;
++(UIImage *)imageWithPDFURL:(NSURL *)url fitSize:(CGSize)size withFillColor:(UIColor *)fillColor;
 
 @end
